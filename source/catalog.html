@@ -6,44 +6,44 @@
   <title>Sedona</title>
 </head>
 
-<pody class="page-body">
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
     </a>
     <nav class="main-nav">
-      <putton class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <header class="page-main__header">
-      <h1 class="page-main__title">Фото и видео</h1>
-      <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+    <header class="header">
+      <h1 class="header__title">Фото и видео</h1>
+      <p class="header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
     </header>
 
@@ -56,7 +56,7 @@
               <img class="gallery__photo" src="#" width="280" height="280" alt="">
             </a>
             <figcaption class="gallery__caption">
-              <p class="gallery__title">Неродные просторы</b>
+              <p class="gallery__title">Неродные просторы</p>
               <p class="gallery__author">Автор фото: Борис</p>
               <p class="gallery__likes">1350</p>
             </figcaption>
@@ -68,7 +68,7 @@
               <img class="gallery__photo" src="#" width="280" height="280" alt="">
             </a>
             <figcaption class="gallery__caption">
-              <p class="gallery__title">Местная растительность</b>
+              <p class="gallery__title">Местная растительность</p>
               <p class="gallery__author">Автор фото: Сергей</p>
               <p class="gallery__likes">143</p>
             </figcaption>
@@ -80,7 +80,7 @@
               <img class="gallery__photo" src="#" width="280" height="280" alt="">
             </a>
             <figcaption class="gallery__caption">
-              <p class="gallery__title">Дорога на север</b>
+              <p class="gallery__title">Дорога на север</p>
               <p class="gallery__author">Автор фото: Петр</p>
               <p class="gallery__likes">96</p>
             </figcaption>
@@ -92,7 +92,7 @@
               <img class="gallery__photo" src="#" width="280" height="280" alt="">
             </a>
             <figcaption class="gallery__caption">
-              <p class="gallery__title">Мост дьявола</b>
+              <p class="gallery__title">Мост дьявола</p>
               <p class="gallery__author">Автор фото: Антон</p>
               <p class="gallery__likes">254</p>
             </figcaption>
@@ -102,10 +102,12 @@
     </section>
 
     <section class="video">
-      <h2 class="visually-hidden">Видеопрезентация</h2>
-      <p class="video__intro">Все еще сомневаетесь?</p>
-      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
+      <header class="header">
+        <h2 class="visually-hidden">Видеопрезентация</h2>
+        <p class="video__intro">Все еще сомневаетесь?</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </header>
       <div class="video__wrapper">
         <a class="video__link" href="#">
           <img class="video__poster" src="#" width="320" height="201" alt="Видео о Седоне">
@@ -119,7 +121,7 @@
             <button class="video__button restart-button" type="button">
               <span class="visually-hidden">Начать заново</span>
             </button>
-            <button class="video__button subtitles-button" type="button">
+            <button class="video__button subtitles-toggle" type="button">
               <span class="visually-hidden">Включить субтитры</span>
             </button>
             <button class="video__button fullscreen-button" type="button">
@@ -163,6 +165,6 @@
       </div>
     </div>
   </footer>
-  </body>
+</body>
 
 </html>
