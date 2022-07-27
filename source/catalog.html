@@ -41,7 +41,7 @@
   </header>
 
   <main class="page-main">
-    <header class="header">
+    <header class="page-main__header header">
       <h1 class="header__title">Фото и видео</h1>
       <p class="header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
@@ -102,7 +102,7 @@
     </section>
 
     <section class="video">
-      <header class="header">
+      <header class="video__header header">
         <h2 class="visually-hidden">Видеопрезентация</h2>
         <p class="video__intro">Все еще сомневаетесь?</p>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
@@ -110,7 +110,9 @@
       </header>
       <div class="video__wrapper">
         <a class="video__link" href="#">
-          <img class="video__poster" src="#" width="320" height="201" alt="Видео о Седоне">
+          <video class="video__player"
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            poster="img/video-mobile.jpg" width="320" height="201" alt="Видео о Седоне">
         </a>
         <div class="video__controls">
           <div class="video__timeline">
