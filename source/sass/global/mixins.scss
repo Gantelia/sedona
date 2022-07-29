@@ -1,0 +1,12 @@
+@mixin font-face($style, $weight, $family: "PT Sans", $src: "../fonts/ptsans.woff2", $format: "woff2", $display: swap) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  src: url($src) format($format);
+  font-display: $display;
+}
+
+@mixin font-size($size, $line) {
+  font-size: $size;
+  line-height: $line;
+}

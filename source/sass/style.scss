@@ -1,4 +1,9 @@
-// Начните писать стили здесь
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+
 body {
-  background-color: turquoise;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: $black;
 }
