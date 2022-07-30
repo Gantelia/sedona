@@ -1,0 +1,11 @@
+.button {
+  @include font-size(21px, 26px);
+  font-weight: 700;
+  color: $white;
+  background-color: $basic-color;
+  cursor: pointer;
+  width: 280px;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+}

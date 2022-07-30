@@ -1,0 +1,37 @@
+.advantages__list {
+  @include list-reset();
+  text-align: center;
+  counter-reset: advantage;
+}
+
+.advantages__number::before {
+  counter-increment: advantage;
+  content: "— № " counter(advantage) " —";
+}
+
+.advantages__item--picture {
+  color: $white;
+  background-color: $basic-color;
+}
+
+.advantages__title {
+  @include font-size(18px, 26px);
+  font-weight: 700;
+}
+
+.advantages__item--picture .advatages__title {
+  color: $white;
+}
+
+.advantages__picture {
+  @include size(320px, 260px);
+  background-repeat: no-repeat;
+}
+
+.advantages__picture--city {
+  background-image: url("../../img/mobile/photo-city@1x\ 1.jpg");
+}
+
+.advantages__picture--bridge {
+  background-image: url("../../img/mobile/photo-bridge@1x\ 1.jpg");
+}

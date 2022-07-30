@@ -9,5 +9,15 @@
 
 .main-nav__link {
   @include font-size(18px, 40px);
+  font-weight: 700;
   color: $white;
+}
+
+.main-nav__link:hover {
+  background-color: $basic-hover;
+}
+
+.main-nav__link:active {
+  background-color: $basic-active;
+  color: rgba($white, 0.3);
 }
