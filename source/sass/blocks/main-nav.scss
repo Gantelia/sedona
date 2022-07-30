@@ -1,0 +1,13 @@
+.main-nav {
+  width: 100%;
+  background-color: $basic-color;
+}
+
+.main-nav__list {
+  @include list-reset();
+}
+
+.main-nav__link {
+  @include font-size(18px, 40px);
+  color: $white;
+}

@@ -1,9 +1,22 @@
-@import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
 
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #ffffff;
-  color: $black;
-}
+// blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
