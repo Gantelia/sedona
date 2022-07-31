@@ -4,9 +4,8 @@
   counter-reset: advantage;
 }
 
-.advantages__number::before {
-  counter-increment: advantage;
-  content: "— № " counter(advantage) " —";
+.advantages__item {
+  background-color: $advantages-grey;
 }
 
 .advantages__item--picture {
@@ -17,6 +16,11 @@
 .advantages__title {
   @include font-size(18px, 26px);
   font-weight: 700;
+}
+
+.advantages__number::before {
+  counter-increment: advantage;
+  content: "— № " counter(advantage) " —";
 }
 
 .advantages__item--picture .advatages__title {
