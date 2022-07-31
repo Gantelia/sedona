@@ -1,0 +1,6 @@
+.features {
+  color: $text-color;
+  background-color: $white;
+  @include list-reset();
+  text-align: left;
+}

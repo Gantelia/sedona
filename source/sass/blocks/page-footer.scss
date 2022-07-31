@@ -1,0 +1,11 @@
+.page-footer {
+  padding: 29px 20px 23px;
+}
+
+.page-footer__wrapper {
+  max-width: 280px;
+}
+
+.page-footer__hashtag {
+  @include font-size(21px, 26px);
+}

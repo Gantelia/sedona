@@ -1,0 +1,26 @@
+.booking {
+  padding: 33px 20px 49px;
+}
+
+.booking__intro {
+  @include font-size(21px, 26px);
+  font-weight: 700;
+}
+
+.booking__description {
+  @include font-size(14px, 24px);
+}
+
+.booking__button {
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+.booking__button:hover {
+  background-color: $basic-hover;
+}
+
+.booking__button:active {
+  background-color: $basic-active;
+  color: rgba($white, 0.3);
+}

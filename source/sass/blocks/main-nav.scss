@@ -1,0 +1,27 @@
+.main-nav {
+  width: 100%;
+  background-color: $basic-color;
+}
+
+.main-nav__list {
+  @include list-reset();
+}
+
+.main-nav__link {
+  @include font-size(18px, 40px);
+  min-width: 320px;
+  display: block;
+  font-weight: 700;
+  color: $white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.main-nav__link:hover {
+  background-color: $basic-hover;
+}
+
+.main-nav__link:active {
+  background-color: $basic-active;
+  color: rgba($white, 0.3);
+}

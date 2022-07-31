@@ -1,0 +1,16 @@
+.page-main__header {
+  padding: 0 18px 16px;
+}
+
+.header__banner {
+  @include size(320px, 389px);
+  background-image: url("../../img/mobile/banner-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__slogan {
+  @include font-size(18px, 26px);
+  font-weight: 700;
+  color: $black;
+}
