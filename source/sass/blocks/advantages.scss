@@ -16,6 +16,7 @@
 .advantages__title {
   @include font-size(18px, 26px);
   font-weight: 700;
+  color: $black;
 }
 
 .advantages__number::before {
@@ -25,6 +26,11 @@
 
 .advantages__item--picture .advatages__title {
   color: $white;
+}
+
+.advantages__number::before {
+  counter-increment: advantage;
+  content: "— № " counter(advantage) " —";
 }
 
 .advantages__picture {

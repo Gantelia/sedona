@@ -9,8 +9,12 @@
 
 .main-nav__link {
   @include font-size(18px, 40px);
+  min-width: 320px;
+  display: block;
   font-weight: 700;
   color: $white;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .main-nav__link:hover {
