@@ -19,11 +19,6 @@
   color: $black;
 }
 
-.advantages__number::before {
-  counter-increment: advantage;
-  content: "— № " counter(advantage) " —";
-}
-
 .advantages__item--picture .advatages__title {
   color: $white;
 }
