@@ -1,0 +1,82 @@
+.form {
+  padding: 0 20px 48px;
+}
+
+.form__group {
+  padding: 0;
+  padding-top: 20px;
+  border: 0;
+  margin: 0;
+
+  &:not(:last-child) {
+    border-bottom: $fields-grey solid 1px;
+  }
+
+  &--user-data {
+    padding-bottom: 26px;
+  }
+
+  &--contacts {
+    padding-bottom: 28px;
+  }
+
+  &--impression {
+    padding-bottom: 32px;
+  }
+
+  &--sights {
+    padding-bottom: 31px;
+  }
+
+  &--emotions {
+    padding-bottom: 51px;
+  }
+}
+
+.form__title {
+  @include font-size(18px, 26px);
+  font-weight: 700;
+  color: $black;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.form__group--sights .form__title {
+  padding-top: 15px;
+}
+
+.form__list {
+  @include list-reset();
+}
+
+.form__label {
+  @include font-size(14px, 26px);
+
+  &--checkbox,
+  &--radio {
+    @include font-size(18px, 26px);
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
+}
+
+.form__field {
+  background-color: $fields-grey;
+  padding: 18px 22px 14px;
+  border: none;
+}
+
+.form__field::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  @include font-size(18px, 26px);
+  font-weight: 700;
+  color: $black;
+}
+
+.form__field--textarea {
+  resize: none;
+  min-width: 279px;
+  min-height: 160px;
+  padding: 13px 23px 29px 21px;
+}

@@ -39,6 +39,12 @@
   color: $black;
 }
 
+.header__heading {
+  @include font-size(18px, 26px);
+  font-weight: 700;
+  color: $black;
+}
+
 .header__slogan {
   @include font-size(18px, 26px);
   font-weight: 700;
