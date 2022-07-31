@@ -9,7 +9,7 @@
   margin: 0;
 
   &:not(:last-child) {
-    border-bottom: $fields-grey solid 1px;
+    border-bottom: $light-grey solid 1px;
   }
 
   &--user-data {
