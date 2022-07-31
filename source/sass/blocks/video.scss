@@ -1,0 +1,26 @@
+.video__header {
+  width: 100%;
+  padding: 32px 27px 33px;
+}
+
+.video__timeline {
+  width: 280px;
+  height: 45px;
+  background-color: rgba($black, 0.6);
+  padding: 22px 23px 20px 22px;
+}
+
+.video__timeline-bar {
+  width: 235px;
+  height: 3px;
+  background-color: rgba($white, 0.2);
+}
+
+.video__timeline-marker {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  color: $black;
+  background-color: $white;
+}

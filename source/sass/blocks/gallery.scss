@@ -1,0 +1,26 @@
+.gallery__list {
+  @include list-reset();
+}
+
+.gallery__figure {
+  margin: 0;
+  padding: 22px 20px 16px;
+  border-bottom: $light-grey solid 1px;
+}
+
+.gallery__title {
+  @include font-size(12px, 24px);
+  font-weight: 700;
+  color: $black;
+}
+
+.gallery__author {
+  @include font-size(14px, 24px);
+  text-transform: none;
+}
+
+.gallery__likes-count {
+  @include font-size(14px, 24px);
+  font-weight: 700;
+  color: $black;
+}
