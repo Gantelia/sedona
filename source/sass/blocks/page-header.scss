@@ -1,5 +1,16 @@
 .page-header {
   color: $black;
   background-color: $white;
-  width: 100%;
+}
+
+.page-header__logo {
+  @include size(102px, 84px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $desktop-width) {
+    @include size(187px, 97px);
+  }
 }

@@ -1,6 +1,46 @@
 .features {
   color: $text-color;
   background-color: $white;
-  @include list-reset();
+  margin: 0;
+  list-style-type: none;
   text-align: left;
+  padding: 22px 18px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+    text-align: center;
+    min-width: $tablet-width;
+  }
+}
+
+.features__item {
+  padding: 13px 40px 13px 52px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 158px 25px 60px;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+}
+
+.features__title {
+  color: $black;
+  @include font-size(18px, 26px);
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.features__text {
+  @include font-size(14px, 21px);
 }

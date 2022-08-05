@@ -1,17 +1,25 @@
 .header__banner {
+  width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 
   &--index {
-    @include size(320px, 389px);
+    @include size(100%, 389px);
+    // @include size(320px, 389px);
     background-image: url("../../img/mobile/banner-index.jpg");
-    background-size: contain;
+    background-position: center;
   }
 
   &--inner {
-    @include size(320px, 158px);
+    @include size(100%, 158px);
+    // @include size(320px, 158px);
     background-image: url("../../img/mobile/banner-form.jpg");
-    background-size: cover;
     background-position: 0 -56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include size(100%, 518px);
+    // @include size(768px, 518px);
   }
 }
 
@@ -19,8 +27,9 @@
   width: 100%;
   border-bottom: $light-grey solid 1px;
 
+
   &--index {
-    padding: 32px 18px 11px 17px;
+    padding: 32px 28px 11px;
     border-bottom: none;
   }
 

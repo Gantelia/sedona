@@ -1,10 +1,26 @@
-.booking__header {
+.booking {
   padding: 33px 20px 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 382px 66px;
+  }
 }
 
 .booking__intro {
   @include font-size(21px, 26px);
   font-weight: 700;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .booking__description {
@@ -15,6 +31,10 @@
   padding-top: 15px;
   padding-bottom: 16px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
 .booking__button:hover {
