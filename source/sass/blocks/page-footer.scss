@@ -1,5 +1,6 @@
 .page-footer {
   padding: 29px 20px 23px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     padding: 36px 60px 36px 45px;
@@ -18,8 +19,8 @@
   justify-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    min-width: 100%;
+    min-width: 680px;
+    max-width: 976px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none;
     gap: 20px;
@@ -29,6 +30,10 @@
 
 .page-footer__hashtag {
   @include font-size(21px, 26px);
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }
 
 .page-footer__social {
@@ -43,4 +48,8 @@
 
 .page-footer__copyright {
   align-self: end;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
 }

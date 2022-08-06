@@ -25,41 +25,52 @@
 
 .header__wrapper {
   width: 100%;
-  border-bottom: $light-grey solid 1px;
 
-
-  &--index {
-    padding: 32px 28px 11px;
-    border-bottom: none;
-
-    @media (min-width: $tablet-width) {
-      padding: 44px;
-      padding-bottom: 52px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 41px;
-      padding-top: 55px;
-    }
-  }
-
-  &--form {
-    padding: 36px 6px 17px 8px;
-
-    @media (min-width: $tablet-width) {
-      padding: 64px;
-      padding-bottom: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 114px;
-    }
-  }
-
-  &--catalog {
-    padding: 24px 9px 13px 12px;
+  @media (max-width: $mobile-width-only) {
+    border-bottom: $light-grey solid 1px;
   }
 }
+
+.header__wrapper--index {
+  padding: 32px 28px 11px;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px;
+    padding-top: 55px;
+  }
+}
+
+.header__wrapper--form {
+  padding: 36px 6px 17px 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+  }
+}
+
+.header__wrapper--catalog {
+  padding: 24px 9px 13px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 370px 67px;
+  }
+}
+
 
 .header__title {
   @include font-size(18px, 26px);

@@ -1,6 +1,24 @@
 .video__header {
   width: 100%;
   padding: 32px 27px 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 162px 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 378px 66px;
+  }
+}
+
+.video-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0px 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0px 200px 85px;
+  }
 }
 
 .video__timeline {

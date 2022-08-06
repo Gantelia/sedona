@@ -1,18 +1,19 @@
 .features {
   color: $text-color;
   background-color: $white;
-  margin: 0;
-  list-style-type: none;
-  text-align: left;
-  padding: 22px 18px;
+  @include list-reset();
+
+  @media (max-width: $mobile-width-only) {
+    text-align: left;
+    padding: 22px 18px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0;
-    text-align: center;
     min-width: $tablet-width;
+    max-width: $desktop-width;
   }
 }
 
