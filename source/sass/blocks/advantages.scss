@@ -22,12 +22,9 @@
   background-color: $basic-color;
 
   @media (min-width: $tablet-width) {
-    &:not(.advantages__item--features) {
+    &:nth-child(2) {
       grid-area: 3/1/4/-1;
-      display: grid;
-      min-width: $tablet-width;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "picture picture text";
+      display: flex;
     }
   }
 }
@@ -40,12 +37,10 @@
 
 @media (min-width: $tablet-width) {
   .advantages__container {
-    display: grid;
-    min-width: $tablet-width;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "text picture picture";
+    display: flex;
   }
 }
+
 
 .advantages__wrapper {
   padding: 39px 16px 35px 15px;
@@ -63,11 +58,11 @@
 .advantages__wrapper--features {
   padding: 34px 12px 39px 13px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px 32px 44px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 47px 52px 57px;
   }
 }
@@ -87,24 +82,24 @@
 }
 
 .advantages__number::before {
+  @include font-size(14px, 21px);
   counter-increment: advantage;
   content: "— № " counter(advantage) " —";
-  @include font-size(14px, 21px);
 }
 
-.advantages__picture {
-  @include size(100%, 260px);
-  // @include size(320px, 260px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-area: picture;
-  background-position: center;
+.advantages__image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+    min-height: 256px;
+  }
 }
 
-.advantages__picture--city {
-  background-image: url("../../img/mobile/photo-city@1x\ 1.jpg");
-}
-
-.advantages__picture--bridge {
-  background-image: url("../../img/mobile/photo-bridge@1x\ 1.jpg");
+@media (min-width: $tablet-width) {
+  .advantages__image--bridge {
+    order: -1;
+  }
 }

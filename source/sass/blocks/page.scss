@@ -3,8 +3,8 @@
 }
 
 .page__body {
-  font-family: "PT Sans", "Arial", sans-serif;
   @include font-size(14px, 21px);
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $text-color;
   text-transform: uppercase;
   background-color: $fields-grey;
@@ -24,7 +24,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    box-shadow: 0 0 15px 0px rgba($black, 0.20);
+    box-shadow: 0 0 15px 0 rgba($black, 0.2);
   }
 }
 

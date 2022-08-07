@@ -1,7 +1,8 @@
 .features {
+  @include list-reset();
   color: $text-color;
   background-color: $white;
-  @include list-reset();
+
 
   @media (max-width: $mobile-width-only) {
     text-align: left;
@@ -33,8 +34,8 @@
 }
 
 .features__title {
-  color: $black;
   @include font-size(18px, 26px);
+  color: $black;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {

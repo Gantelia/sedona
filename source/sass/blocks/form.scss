@@ -101,6 +101,7 @@
 
 .form__field::placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
+
   @include font-size(18px, 26px);
   font-weight: 700;
   color: $black;
