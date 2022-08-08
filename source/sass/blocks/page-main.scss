@@ -3,5 +3,7 @@
 }
 
 .page-main__map {
-  margin-bottom: 10px;
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 10px;
+  }
 }

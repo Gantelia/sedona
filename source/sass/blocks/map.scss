@@ -1,0 +1,8 @@
+.map__picture {
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    @include size(100%, 350px);
+  }
+}

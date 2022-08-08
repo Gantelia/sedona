@@ -2,24 +2,69 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-  &--index {
-    @include size(100%, 389px);
-    // @include size(320px, 389px);
-    background-image: url("../../img/mobile/banner-index.jpg");
-    background-position: center;
-  }
-
-  &--inner {
-    @include size(100%, 158px);
-    // @include size(320px, 158px);
-    background-image: url("../../img/mobile/banner-form.jpg");
-    background-position: 0 -56px;
-  }
+.header__banner--index {
+  @include size(100%, 389px);
+  // @include size(320px, 389px);
+  background-image: url("../../img/mobile/banner-index.jpg");
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     @include size(100%, 518px);
     // @include size(768px, 518px);
+  }
+}
+
+.header__banner--inner {
+  @include size(100%, 158px);
+  // @include size(320px, 158px);
+  background-image: url("../../img/mobile/banner-form.jpg");
+  background-position: 0 -56px;
+  background-size: 902px 214px;
+
+  @media (min-width: $tablet-width) {
+    @include size(100%, 290px);
+    background-size: 1200px 518px;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(100%, 301px);
+    background-position: 0 0;
+  }
+}
+
+.header__banner::before {
+  @include size(100%, 57px);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: transparent;
+  background-image: url("../../img/banner-mask.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .header__greeting {
+    @include size(460px, 350px);
+  }
+}
+
+.header__sign {
+  @media (min-width: $tablet-width) {
+    @include size(457px, 78px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(460px, 80px);
   }
 }
 
@@ -76,24 +121,30 @@
   @include font-size(18px, 26px);
   font-weight: 700;
   color: $black;
+  margin: 0;
 }
 
 .header__intro {
   @include font-size(18px, 26px);
   font-weight: 700;
   color: $black;
+  margin: 0;
 }
 
 .header__slogan {
   @include font-size(18px, 26px);
   font-weight: 700;
   color: $black;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .header__description {
   @include font-size(14px, 26px);
+  margin: 0;
 }
 
 .header__text {
   @include font-size(14px, 24px);
+  margin: 0;
 }
