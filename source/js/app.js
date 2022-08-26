@@ -12,4 +12,3 @@ toggleNavigation.addEventListener('click', () => {
     navigation.classList.add('main-nav--closed');
   }
 })
-

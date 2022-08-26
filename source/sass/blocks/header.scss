@@ -95,12 +95,12 @@
   padding: 36px 6px 17px 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 64px;
-    padding-bottom: 30px;
+    padding: 59px 165px 37px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
+    padding: 113px 382px 27px;
   }
 }
 
@@ -122,6 +122,22 @@
   font-weight: 700;
   color: $black;
   margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper--form .header__title {
+    @include font-size(30px, 26px);
+    font-weight: 700;
+  }
 }
 
 .header__intro {
@@ -137,6 +153,10 @@
   color: $black;
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .header__description {
