@@ -18,7 +18,11 @@
   min-height: 168px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -73,7 +77,6 @@
   }
 }
 
-
 .advantages__wrapper {
   padding: 39px 16px 35px 15px;
   grid-area: text;
@@ -82,6 +85,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    width: 33%;
     padding: 43px 36px 41px;
   }
 
@@ -123,6 +127,7 @@
   font-weight: 700;
   color: $black;
   margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -135,6 +140,7 @@
 
 .advantages__number {
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .advantages__number::before {
@@ -147,6 +153,17 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__picture {
+    width: 66%;
+    flex-grow: 1;
+  }
+
+  .advantages__picture--bridge {
+    order: -1;
+  }
+}
+
 .advantages__image {
   width: 100%;
   object-fit: cover;
@@ -154,12 +171,14 @@
 
   @media (min-width: $tablet-width) {
     min-width: 512px;
-    min-height: 256px;
-  }
-}
+    height: 256px;
 
-@media (min-width: $tablet-width) {
-  .advantages__image--bridge {
-    order: -1;
+    &--bridge {
+      order: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
   }
 }
