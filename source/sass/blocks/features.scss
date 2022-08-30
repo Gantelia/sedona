@@ -20,6 +20,7 @@
 
 .features__item {
   padding: 13px 40px 13px 52px;
+  background-repeat: no-repeat;
 
 
   @media (min-width: $tablet-width) {
@@ -31,10 +32,6 @@
       order: 3;
     }
   }
-}
-
-.features__item {
-  background-repeat: no-repeat;
 }
 
 .features__item--housing {

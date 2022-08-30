@@ -21,23 +21,27 @@
   justify-content: space-between;
 }
 
-.advantages__item:not(.advantages__item--picture) {
-  @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .advantages__item:not(.advantages__item--picture) {
     position: relative;
-
-    &::before {
-      @include size(88%, 1px);
-      content: "";
-      position: absolute;
-      background-color: #d6d6d6;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-    }
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .advantages__item:not(.advantages__item--picture) {
     min-height: 256px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__item:not(.advantages__item--picture)::before {
+    @include size(88%, 1px);
+    content: "";
+    position: absolute;
+    background-color: #d6d6d6;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
   }
 }
 
@@ -90,30 +94,28 @@
   padding: 71px 12px 39px 13px;
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      @include size(100%, 37px);
-      content: "";
-      position: absolute;
-      top: -1px;
-      left: 0;
-      background-color: transparent;
-      background-image: url("../../img/mobile/advantage-1-mask.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 768px 37px;
-      overflow: hidden;
-    }
-  }
-}
-
-.advantages__wrapper--features {
   @media (min-width: $tablet-width) {
     padding: 40px 32px 44px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 47px 52px 57px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__wrapper--features::before {
+    @include size(100%, 37px);
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-color: transparent;
+    background-image: url("../../img/mobile/advantage-1-mask.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 37px;
+    overflow: hidden;
   }
 }
 

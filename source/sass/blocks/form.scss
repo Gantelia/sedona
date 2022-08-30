@@ -38,87 +38,81 @@
     margin-bottom: 23px;
   }
 
-  &:last-child {
-    margin-bottom: 51px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
-    }
-  }
-}
-
-.form__group {
-  &--user {
-    padding-bottom: 26px;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 58px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 79px;
-    }
-  }
-
-  &--contacts {
-    padding-bottom: 28px;
-
-    @media (min-width: $tablet-width) {
-      grid-area: 2/1/3/-1;
-      margin-top: 22px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 20px;
-      margin-bottom: 2px;
-    }
-  }
-}
-
-.form__group {
-  &--impression {
-    padding-bottom: 32px;
-
-    @media (min-width: $tablet-width) {
-      grid-area: 1/1/2/2;
-      padding-right: 32px;
-    }
-  }
-
-  &--sights {
-    padding-bottom: 31px;
-
-    @media (min-width: $tablet-width) {
-      grid-area: 3/1/4/-1;
-      margin-bottom: 25px;
-      padding-right: 80px;
-      padding-left: 100px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-}
-
-.form__group {
-  &--emotions {
-    padding-bottom: 51px;
-
-    @media (min-width: $tablet-width) {
-      grid-area: 4/1/5/-1;
-    }
-  }
-
-  &--big {
-    @media (min-width: $tablet-width) {
-      border-top: #dbdbdb solid 1px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+  }
+}
+
+.form__group:last-child {
+  margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.form__group--big {
+  @media (min-width: $tablet-width) {
+    border-top: #dbdbdb solid 1px;
+  }
+}
+
+.form__group--user {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 79px;
+  }
+}
+
+.form__group--contacts {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 2/1/3/-1;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+}
+
+.form__group--impression {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+    padding-right: 32px;
+  }
+}
+
+.form__group--sights {
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3/1/4/-1;
+    margin-bottom: 25px;
+    padding-right: 80px;
+    padding-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form__group--emotions {
+  padding-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 4/1/5/-1;
   }
 }
 
@@ -355,12 +349,12 @@
 }
 
 .form__field {
+  @include font-size(18px, 26px);
   padding: 18px 22px 14px;
   background-color: $fields-grey;
   border: none;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  @include font-size(18px, 26px);
 
   &--user {
     margin-left: 15px;
@@ -396,22 +390,19 @@
   box-shadow: inset 0 0 0 4px $light-grey;
 }
 
-.form__field {
+.form__field--phone:active,
+.form__field--phone:focus {
+  background: url("../../img/mobile/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $white 58px);
+}
 
-  &--phone:active,
-  &--phone:focus {
-    background: url("../../img/mobile/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $white 58px);
-  }
-
-  &--email:active,
-  &--email:focus {
-    background: url("../../img/mobile/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $white 58px);
-  }
+.form__field--email:active,
+.form__field--email:focus {
+  background: url("../../img/mobile/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $white 58px);
 }
 
 .form__field::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
   @include font-size(18px, 26px);
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   color: $black;
 }
@@ -439,17 +430,17 @@
   }
 }
 
-.form__input[type="radio"]:hover+.form__mark,
-.form__input[type="checkbox"]:hover+.form__mark {
+.form__input[type="radio"]:hover + .form__mark,
+.form__input[type="checkbox"]:hover + .form__mark {
   background-color: $light-grey;
 }
 
-.form__input[type="radio"]:active+.form__mark,
-.form__input[type="checkbox"]:active+.form__mark {
+.form__input[type="radio"]:active + .form__mark,
+.form__input[type="checkbox"]:active + .form__mark {
   background-color: $dark-grey;
 }
 
-.form__input[type="radio"]:checked+.form__mark:before {
+.form__input[type="radio"]:checked + .form__mark::before {
   content: "";
   position: absolute;
   background-color: $text-color;
@@ -461,8 +452,8 @@
   transform: translate(-50%, -50%);
 }
 
-.form__input[type="checkbox"]:checked+.form__mark:before,
-.form__input[type="checkbox"]:checked+.form__mark:after {
+.form__input[type="checkbox"]:checked + .form__mark::before,
+.form__input[type="checkbox"]:checked + .form__mark::after {
   position: absolute;
   background-color: $text-color;
   content: "";
@@ -472,25 +463,25 @@
   transform-origin: right bottom;
 }
 
-.form__input[type="checkbox"]:checked+.form__mark:before {
+.form__input[type="checkbox"]:checked + .form__mark::before {
   width: 13px;
   height: 3px;
 }
 
-.form__input[type="checkbox"]:checked+.form__mark:after {
+.form__input[type="checkbox"]:checked + .form__mark::after {
   width: 3px;
   height: 21px;
 }
 
-.form__input[type="radio"]:checked:active+.form__mark:before {
+.form__input[type="radio"]:checked:active + .form__mark::before {
   opacity: 30%;
 }
 
-.form__input[type="checkbox"]:checked:active+.form__mark:before {
+.form__input[type="checkbox"]:checked:active + .form__mark::before {
   background: linear-gradient(to left, rgba($text-color, 0.16) 3px, rgba($text-color, 0.3) 3px);
 }
 
-.form__input[type="checkbox"]:checked:active+.form__mark:after {
+.form__input[type="checkbox"]:checked:active + .form__mark::after {
   background: linear-gradient(to top, rgba($text-color, 0.16) 3px, rgba($text-color, 0.3) 3px);
 }
 

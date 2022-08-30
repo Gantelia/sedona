@@ -43,7 +43,16 @@
 }
 
 .main-nav--closed .main-nav__toggle {
+  top: 17px;
   bottom: 17px;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 
   &::before {
     position: absolute;
@@ -59,7 +68,7 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle {
+.main-nav--open .main-nav__toggle {
   &:hover {
     opacity: 60%;
   }
@@ -67,11 +76,6 @@
   &:active {
     opacity: 30%;
   }
-}
-
-
-.main-nav--open .main-nav__toggle {
-  top: 17px;
 
   &::before,
   &::after {
@@ -91,16 +95,6 @@
 
   &::after {
     transform: rotate(45deg);
-  }
-}
-
-.main-nav--open .main-nav__toggle {
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
   }
 }
 
