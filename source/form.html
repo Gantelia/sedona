@@ -12,7 +12,12 @@
   <div class="page__wrapper">
     <header class="page__header page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/mobile/logotype-mobile.svg" width="102" height="84"
+            alt="Логотип Sedona">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">

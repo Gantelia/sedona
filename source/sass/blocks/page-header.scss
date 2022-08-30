@@ -8,7 +8,6 @@
 }
 
 .page-header__logo {
-  @include size(102px, 84px);
   position: absolute;
   top: 0;
   left: 50%;
@@ -19,8 +18,10 @@
     top: auto;
     bottom: -28px;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
     @include size(187px, 97px);
   }
 }

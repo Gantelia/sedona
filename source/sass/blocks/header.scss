@@ -4,7 +4,6 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -23,7 +22,7 @@
 .header__banner--inner {
   @include size(100%, 158px);
   // @include size(320px, 158px);
-  background-image: url("../../img/mobile/banner-form.jpg");
+  background-image: url("../../img/mobile/banner-inner.jpg");
   background-position: 0 -56px;
   background-size: 902px 214px;
 
@@ -52,19 +51,26 @@
   overflow: hidden;
 }
 
-@media (min-width: $tablet-width) {
-  .header__greeting {
+.header__greeting {
+  margin-top: 90px;
+
+  @media (min-width: $tablet-width) {
     @include size(460px, 350px);
+    margin-top: 78px;
   }
 }
 
 .header__sign {
+  margin-top: 52px;
+
   @media (min-width: $tablet-width) {
     @include size(457px, 78px);
+    margin-top: 95px;
   }
 
   @media (min-width: $desktop-width) {
     @include size(460px, 80px);
+    margin-top: 101px;
   }
 }
 
