@@ -2,11 +2,9 @@
   @include list-reset();
   text-align: center;
   counter-reset: advantage;
-  max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    min-width: $tablet-width;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -170,15 +168,10 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    min-width: 512px;
     height: 256px;
 
     &--bridge {
       order: -1;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 800px;
   }
 }
