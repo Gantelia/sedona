@@ -247,13 +247,13 @@
 
 @media (min-width: $desktop-width) {
   .form__group--sights li:not(:nth-child(4n)) {
-    margin-right: 36px;
+    margin-right: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__group--sights li:nth-child(3n) {
-    margin-right: 35px;
+    margin-right: 30px;
   }
 }
 
@@ -501,6 +501,7 @@
   margin: 0 auto;
   padding-top: 18px;
   padding-bottom: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 

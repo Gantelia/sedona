@@ -47,7 +47,7 @@
 
   @media (min-width: $tablet-width) {
     @include size(100%, 290px);
-    background-position: left top;
+    background-position: center bottom;
     background-image: url("../../img/tablet/banner-inner-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -130,12 +130,12 @@
   padding: 36px 6px 17px 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 165px 37px;
+    padding: 59px 150px 37px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 113px 382px 27px;
+    padding: 113px 370px 27px;
   }
 }
 

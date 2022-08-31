@@ -21,3 +21,45 @@ a {
 *::after {
   box-sizing: border-box;
 }
+
+@media (max-width: $mobile-width-only) {
+  .br-tablet {
+    display: none;
+  }
+
+  .br-desktop {
+    display: none;
+  }
+
+  .br-mobile {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .br-mobile {
+    display: none;
+  }
+
+  .br-desktop {
+    display: none;
+  }
+
+  .br-tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .br-mobile {
+    display: none;
+  }
+
+  .br-tablet {
+    display: none;
+  }
+
+  .br-desktop {
+    display: inline;
+  }
+}

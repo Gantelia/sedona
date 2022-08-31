@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 382px 66px;
+    padding: 58px 371px 66px;
     min-height: 331px;
   }
 }
@@ -37,6 +37,7 @@
   padding-top: 15px;
   padding-bottom: 16px;
   width: 280px;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     width: 458px;
