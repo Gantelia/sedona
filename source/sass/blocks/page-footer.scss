@@ -15,8 +15,9 @@
   margin: 0 auto;
   max-width: 280px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   justify-items: center;
+  row-gap: 34px;
 
   @media (min-width: $tablet-width) {
     min-width: 680px;
