@@ -375,11 +375,11 @@
   }
 
   &--phone {
-    background: url("../../img/mobile/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $fields-grey 58px);
+    background: url("../../img/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $fields-grey 58px);
   }
 
   &--email {
-    background: url("../../img/mobile/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $fields-grey 58px);
+    background: url("../../img/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $fields-grey 58px);
   }
 }
 
@@ -395,12 +395,12 @@
 
 .form__field--phone:active,
 .form__field--phone:focus {
-  background: url("../../img/mobile/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $white 58px);
+  background: url("../../img/icon-phone.svg") no-repeat right 20px top 20px, linear-gradient(to left, $icons-grey 58px, $white 58px);
 }
 
 .form__field--email:active,
 .form__field--email:focus {
-  background: url("../../img/mobile/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $white 58px);
+  background: url("../../img/icon-email.svg") no-repeat right 21px top 23px, linear-gradient(to left, $icons-grey 58px, $white 58px);
 }
 
 .form__field::placeholder {

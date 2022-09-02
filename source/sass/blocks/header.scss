@@ -1,67 +1,47 @@
 .header__banner {
+  @include size(100%, 389px);
   width: 100%;
   background-color: $dark-grey;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-.header__banner--index {
-  @include size(100%, 389px);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center top;
-  background-image: url("../../img/mobile/banner-index-mobile.jpg");
+  background-image: url("../../img/mobile/banner-mobile.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/mobile/banner-index-mobile@2x.jpg");
+    background-image: url("../../img/mobile/banner-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     @include size(100%, 518px);
-    background-image: url("../../img/tablet/banner-index-tablet.jpg");
+    background-image: url("../../img/tablet/banner-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tablet/banner-index-tablet@2x.jpg");
+      background-image: url("../../img/tablet/banner-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/desktop/banner-index-desktop.jpg");
+    background-image: url("../../img/desktop/banner-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/desktop/banner-index-desktop@2x.jpg");
+      background-image: url("../../img/desktop/banner-desktop@2x.jpg");
     }
   }
 }
 
 .header__banner--inner {
   @include size(100%, 158px);
-  background-position: 0 -56px;
-  background-size: cover;
-  background-image: url("../../img/mobile/banner-inner-mobile.jpg");
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/mobile/banner-inner-mobile@2x.jpg");
-  }
+  background-position: center bottom;
 
   @media (min-width: $tablet-width) {
     @include size(100%, 290px);
-    background-position: center bottom;
-    background-image: url("../../img/tablet/banner-inner-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tablet/banner-inner-tablet@2x.jpg");
-    }
   }
 
   @media (min-width: $desktop-width) {
     @include size(100%, 301px);
-    background-image: url("../../img/desktop/banner-inner-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/desktop/banner-inner-desktop@2x.jpg");
-    }
   }
 }
 
@@ -71,26 +51,22 @@
   position: absolute;
   left: 0;
   bottom: -1px;
-  background-color: transparent;
   background-image: url("../../img/banner-mask.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   overflow: hidden;
 }
 
-.header__greeting {
-  @include size(282px, 214px);
-  margin-top: 90px;
-
-  @media (min-width: $tablet-width) {
-    @include size(460px, 350px);
-    margin-top: 78px;
-  }
-}
-
-.header__sign {
+.header__banner--inner::after {
   @include size(229px, 39px);
-  margin-top: 52px;
+  content: "";
+  margin: 52px auto auto;
+  color: $white;
+  background-image: url("../../img/sedona.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
 
   @media (min-width: $tablet-width) {
     @include size(457px, 78px);
@@ -100,6 +76,17 @@
   @media (min-width: $desktop-width) {
     @include size(460px, 80px);
     margin-top: 101px;
+  }
+}
+
+.header__greeting {
+  @include size(282px, 214px);
+  margin-top: 90px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    @include size(460px, 350px);
+    margin-top: 78px;
   }
 }
 
