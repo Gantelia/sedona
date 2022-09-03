@@ -2,12 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .copyright__text {
   @include font-size(14px, 26px);
   text-align: center;
   margin-right: 10px;
+  width: min-content;
 }
 
 .copyright__logo {

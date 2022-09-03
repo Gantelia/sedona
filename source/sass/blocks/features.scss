@@ -14,19 +14,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 8px;
+  }
 }
 
 .features__item {
-  padding: 13px 34px 13px 52px;
+  padding: 13px 24px 13px 52px;
   background-repeat: no-repeat;
 
 
   @media (min-width: $tablet-width) {
-    padding: 158px 25px 60px;
+    padding: 158px 18px 60px 6px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 158px 50px 80px;
+    padding: 159px 40px 80px;
   }
 
   &:nth-child(2) {
@@ -43,6 +47,10 @@
 
   @media (min-width: $tablet-width) {
     background-size: 75px 72px;
+    background-position: calc(50% - 8px) 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     background-position: center 60px;
   }
 }
@@ -54,6 +62,10 @@
 
   @media (min-width: $tablet-width) {
     background-size: 64px 75px;
+    background-position: calc(50% - 8px) 57px;
+  }
+
+  @media (min-width: $desktop-width) {
     background-position: center 57px;
   }
 }
@@ -65,6 +77,10 @@
 
   @media (min-width: $tablet-width) {
     background-size: 76px 68px;
+    background-position: calc(50% - 8px) 63px;
+  }
+
+  @media (min-width: $desktop-width) {
     background-position: center 63px;
   }
 }
@@ -74,10 +90,11 @@
   color: $black;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 22px;
   }
 }
 

@@ -6,32 +6,35 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    background-color: $advantages-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 0;
   }
 }
 
 .advantages__item:not(.advantages__item--picture) {
   background-color: $advantages-grey;
   padding: 26px;
+  padding-bottom: 24px;
   color: $black;
-  min-height: 168px;
+  min-height: 166px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
+    padding: 43px 20px 41px 6px;
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .advantages__item:not(.advantages__item--picture) {
-    position: relative;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__item:not(.advantages__item--picture) {
-    min-height: 256px;
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
   }
 }
 
@@ -101,7 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 57px;
+    padding: 47px 53px 57px;
   }
 }
 
@@ -112,7 +115,7 @@
     position: absolute;
     top: -12px;
     left: 0;
-    background-image: url("../../img/mobile/advantage-1-mask.svg");
+    background-image: url("../../img/mobile/advantages-mask.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 768px 37px;
@@ -125,10 +128,11 @@
   font-weight: 700;
   color: $black;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 12px;
   }
 }
 
@@ -138,13 +142,21 @@
 
 .advantages__number {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .advantages__number::before {
   @include font-size(14px, 21px);
   counter-increment: advantage;
-  content: "— № " counter(advantage) " —";
+  content: "— №" counter(advantage) " —";
 }
 
 .advantages__description {
