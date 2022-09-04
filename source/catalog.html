@@ -68,8 +68,21 @@
           <li class="gallery__item gallery__item--big">
             <figure class="gallery__figure">
               <a class="gallery__link" href="#">
-                <img class="gallery__photo gallery__photo--big" src="img/mobile/photo-1-mobile.jpg" width="280"
-                  height="280" alt="">
+                <picture class="gallery__picture">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-1-desktop.webp 1x, img/desktop/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/photo-1-tablet.webp 1x, img/tablet/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/mobile/photo-1-mobile.webp 1x, img/mobile/photo-1-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-1-desktop.jpg 1x, img/desktop/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tablet/photo-1-tablet.jpg 1x, img/tablet/photo-1-tablet@2x.jpg 2x">
+                  <img class="gallery__photo gallery__photo--big" src="img/mobile/photo-1-mobile.jpg"
+                    srcset="img/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
+                </picture>
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
@@ -90,7 +103,21 @@
           <li class="gallery__item">
             <figure class="gallery__figure">
               <a class="gallery__link" href="#">
-                <img class="gallery__photo" src="img/mobile/photo-2-mobile.jpg" width="280" height="280" alt="">
+                <picture class="gallery__picture">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-2-desktop.webp 1x, img/desktop/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/photo-2-tablet.webp 1x, img/tablet/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/mobile/photo-2-mobile.webp 1x, img/mobile/photo-2-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-2-desktop.jpg 1x, img/desktop/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tablet/photo-2-tablet.jpg 1x, img/tablet/photo-2-tablet@2x.jpg 2x">
+                  <img class="gallery__photo" src="img/mobile/photo-2-mobile.jpg"
+                    srcset="img/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
+                </picture>
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
@@ -111,7 +138,21 @@
           <li class="gallery__item">
             <figure class="gallery__figure">
               <a class="gallery__link" href="#">
-                <img class="gallery__photo" src="img/mobile/photo-3-mobile.jpg" width="280" height="280" alt="">
+                <picture class="gallery__picture">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-3-desktop.webp 1x, img/desktop/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/photo-3-tablet.webp 1x, img/tablet/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/mobile/photo-3-mobile.webp 1x, img/mobile/photo-3-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-3-desktop.jpg 1x, img/desktop/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tablet/photo-3-tablet.jpg 1x, img/tablet/photo-3-tablet@2x.jpg 2x">
+                  <img class="gallery__photo" src="img/mobile/photo-3-mobile.jpg"
+                    srcset="img/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
+                </picture>
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
@@ -132,7 +173,21 @@
           <li class="gallery__item">
             <figure class="gallery__figure">
               <a class="gallery__link" href="#">
-                <img class="gallery__photo" src="img/mobile/photo-4-mobile.jpg" width="280" height="280" alt="">
+                <picture class="gallery__picture">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-4-desktop.webp 1x, img/desktop/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/tablet/photo-4-tablet.webp 1x, img/tablet/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/mobile/photo-4-mobile.webp 1x, img/mobile/photo-4-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/desktop/photo-4-desktop.jpg 1x, img/desktop/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tablet/photo-4-tablet.jpg 1x, img/tablet/photo-4-tablet@2x.jpg 2x">
+                  <img class="gallery__photo" src="img/mobile/photo-4-mobile.jpg"
+                    srcset="img/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
+                </picture>
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
@@ -162,28 +217,48 @@
             раз!</p>
         </header>
         <div class="video__wrapper">
-          <video class="video__player" aria-label="Видео о Седоне"
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            poster="img/mobile/video-mobile.jpg" width="320" height="201">
-          </video>
+          <a class="video__link" href="#">
+            <picture class="video__picture">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/desktop/video-desktop.webp 1x, img/desktop/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/video-tablet.webp 1x, img/tablet/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/video-mobile.webp 1x, img/mobile/video-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/desktop/video-desktop.jpg 1x, img/desktop/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/tablet/video-tablet.jpg 1x, img/tablet/video-tablet@2x.jpg 2x">
+              <img class="video__photo" src="img/mobile/video-mobile.jpg" srcset="img/mobile/video-mobile@2x.jpg 2x"
+                width="320" height="201" alt="Видео о Седоне">
+            </picture>
+          </a>
           <div class="video__controls controls">
             <div class="controls__time-panel">
-              <div class="controls__time-slider"></div>
-              <button class="controls__slider-control" type="button">
-                <span class="visually-hidden">Выбрать время просмотра</span>
-              </button>
+              <div class="controls__time-slider">
+                <button class="controls__handle" style="left: 17%" type="button">
+                  <span class="visually-hidden">Выбрать время просмотра</span>
+                </button>
+              </div>
             </div>
-            <div class="controls__buttons">
-              <button class="controls__button controls__restart" type="button">
-                <span class="visually-hidden">Начать заново</span>
-              </button>
-              <button class="controls__button controls__subtitles" type="button">
-                <span class="visually-hidden">Включить субтитры</span>
-              </button>
-              <button class="controls__button controls__fullscreen" type="button">
-                <span class="visually-hidden">Открыть во весь экран</span>
-              </button>
-            </div>
+            <button class="controls__button controls__restart" type="button">
+              <svg class="controls__icon" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-replay"></use>
+              </svg>
+              <span class="visually-hidden">Начать заново</span>
+            </button>
+            <button class="controls__button controls__subtitles" type="button">
+              <svg class="controls__icon" width="32" height="20">
+                <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+              </svg>
+              <span class="visually-hidden">Включить субтитры</span>
+            </button>
+            <button class="controls__button controls__fullscreen" type="button">
+              <svg class="controls__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+              </svg>
+              <span class="visually-hidden">Открыть во весь экран</span>
+            </button>
           </div>
         </div>
       </section>

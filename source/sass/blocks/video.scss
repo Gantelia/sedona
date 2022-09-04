@@ -1,5 +1,4 @@
 .video__header {
-  width: 100%;
   padding: 32px 27px 33px;
 
   @media (min-width: $tablet-width) {
@@ -11,7 +10,7 @@
   }
 }
 
-.video-wrapper {
+.video__wrapper {
   @media (min-width: $tablet-width) {
     padding: 0 60px 40px;
   }
@@ -21,24 +20,29 @@
   }
 }
 
-.video__timeline {
-  width: 280px;
-  height: 45px;
-  background-color: rgba($black, 0.6);
-  padding: 22px 23px 20px 22px;
+.video__photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
-.video__timeline-bar {
-  width: 235px;
-  height: 3px;
-  background-color: rgba($white, 0.2);
-}
-
-.video__timeline-marker {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: none;
+.video__controls {
+  @include size(88%, 66px);
+  margin: 0 auto;
+  position: relative;
+  background-color: $fields-grey;
   color: $black;
-  background-color: $white;
+  padding: 17px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    margin-top: -93px;
+    background-color: rgba($black, 0.6);
+    color: $white;
+    padding: 29px 35px 32px 29px;
+    display: flex;
+    align-items: center;
+  }
 }

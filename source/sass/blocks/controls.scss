@@ -1,0 +1,70 @@
+.controls__time-panel {
+  @include size(100%, 45px);
+  background-color: rgba($black, 0.6);
+  padding: 22px 23px 20px 22px;
+  position: absolute;
+  top: -45px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    background-color: transparent;
+  }
+}
+
+.controls__time-slider {
+  @include size(100%, 3px);
+  background-color: rgba($white, 0.2);
+  position: relative;
+}
+
+.controls__handle {
+  @include size(13px, 13px);
+  border-radius: 50%;
+  border: none;
+  color: $black;
+  background-color: $white;
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.controls__button {
+  @include size(32px, 32px);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+}
+
+.controls__restart {
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.controls__icon {
+  fill: #5c6870;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+  }
+}
+
+.controls__subtitles {
+  margin-left: auto;
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+  }
+}

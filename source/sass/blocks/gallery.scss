@@ -43,6 +43,7 @@
 .gallery__figure {
   margin: 0;
   text-align: left;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -50,20 +51,11 @@
 }
 
 .gallery__photo {
-  object-fit: contain;
-  height: auto;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
-}
-
-.gallery__photo--big {
-  @media (min-width: $tablet-width) {
-    @include size(648px, 400px);
-  }
-
-  @media (min-width: $desktop-width) {
-    @include size(1200px, 400px);
-  }
+  width: 100%;
+  height: auto;
 }
 
 .gallery__caption {
