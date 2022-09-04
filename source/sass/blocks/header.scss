@@ -127,7 +127,7 @@
 }
 
 .header__wrapper--catalog {
-  padding: 24px 9px 13px 12px;
+  padding: 24px 20px 13px;
 
   @media (min-width: $tablet-width) {
     padding: 59px 155px;
@@ -137,7 +137,6 @@
     padding: 102px 370px 67px;
   }
 }
-
 
 .header__title {
   @include font-size(18px, 26px);
