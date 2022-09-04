@@ -119,14 +119,14 @@
 }
 
 .header__wrapper--catalog {
-  padding: 24px 20px 13px;
+  padding: 34px 20px 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 155px;
+    padding: 59px 155px 79px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 102px 370px 67px;
+    padding: 96px 370px 82px;
   }
 }
 
@@ -193,7 +193,7 @@
 
 .header__mask {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
 

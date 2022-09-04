@@ -22,7 +22,7 @@
 }
 
 .gallery__item {
-  padding: 22px 20px;
+  padding: 22px 20px 13px;
   border-bottom: $light-grey solid 1px;
   display: flex;
   flex-direction: column;
@@ -59,13 +59,17 @@
 }
 
 .gallery__caption {
-  margin-top: 10px;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     background-color: $fields-grey;
     margin: 0;
     padding: 16px 20px 15px;
+
+    &:not(.gallery__caption--big-picture) {
+      padding-right: 29px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -93,10 +97,10 @@
 }
 
 .gallery__title {
-  @include font-size(12px, 24px);
+  @include font-size(14px, 24px);
   color: $black;
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -107,7 +111,7 @@
   @include font-size(14px, 24px);
   text-transform: none;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -121,9 +125,10 @@
 }
 
 .gallery__icon-like {
-  margin-right: 9px;
+  margin-right: 13px;
   fill: rgba($black, 0.3);
   min-width: 23px;
+  margin-bottom: 5px;
 
   @media (min-width: $desktop-width) {
     fill: $white;

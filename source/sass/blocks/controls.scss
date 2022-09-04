@@ -28,6 +28,14 @@
   top: -5px;
   transform: translateX(-50%);
   cursor: pointer;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .controls__button {
@@ -38,11 +46,25 @@
   background-color: transparent;
 }
 
+.controls__button:active {
+  opacity: 30%;
+}
+
 .controls__restart {
   margin-right: 14px;
 
   @media (min-width: $tablet-width) {
     order: -1;
+  }
+}
+
+.controls__subtitles {
+  margin-left: auto;
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+    margin-right: 35px;
   }
 }
 
@@ -60,11 +82,11 @@
   }
 }
 
-.controls__subtitles {
-  margin-left: auto;
-  margin-right: 25px;
+.controls__button:hover .controls__icon {
+  fill: $text-color;
 
   @media (min-width: $tablet-width) {
-    margin-left: 19px;
+    fill: rgba($white, 0.6);
   }
 }
+

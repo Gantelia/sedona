@@ -54,10 +54,15 @@
 
     <main class="page__main page-main">
       <header class="page-main__header header">
-        <div class="header__banner header__banner--inner"></div>
+        <div class="header__banner header__banner--inner">
+          <svg class="header__mask header__mask--top" aria-hidden="true" width="1200" height="57">
+            <use xlink:href="img/sprite.svg#mask"></use>
+          </svg>
+        </div>
         <div class="header__wrapper header__wrapper--catalog">
           <h1 class="header__title header__title--catalog">Фото и видео</h1>
-          <p class="header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          <p class="header__text">Не можете решиться на путешествие из-за курса?<br class="br br--tablet br--desktop">
+            Фотографии помогут вам забыть о
             политике и экономике.</p>
         </div>
       </header>
@@ -84,7 +89,7 @@
                     srcset="img/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
                 </picture>
               </a>
-              <figcaption class="gallery__caption">
+              <figcaption class="gallery__caption gallery__caption--big-picture">
                 <div class="gallery__container">
                   <p class="gallery__title">
                     <strong>Неродные просторы</strong>
@@ -127,7 +132,7 @@
                   <p class="gallery__author">Автор фото: Сергей</p>
                 </div>
                 <div class="gallery__wrapper">
-                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21" fill="none">
+                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                   <p class="gallery__likes-count">143</p>
