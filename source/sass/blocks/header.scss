@@ -169,6 +169,10 @@
   margin: 0;
 }
 
+.header__intro--video {
+  margin-bottom: 30px;
+}
+
 .header__slogan {
   @include font-size(18px, 26px);
   font-weight: 700;

@@ -73,13 +73,17 @@
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
-                  <p class="gallery__title">Неродные просторы</p>
+                  <p class="gallery__title">
+                    <strong>Неродные просторы</strong>
+                  </p>
                   <p class="gallery__author">Автор фото: Борис</p>
                 </div>
-                <svg class="gallery__icon-like" aria-role="none" width="23" height="21" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
-                <p class="gallery__likes-count">1350</p>
+                <div class="gallery__wrapper">
+                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21" fill="none">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="gallery__likes-count">1350</p>
+                </div>
               </figcaption>
             </figure>
           </li>
@@ -90,13 +94,17 @@
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
-                  <p class="gallery__title">Местная растительность</p>
+                  <p class="gallery__title">
+                    <strong>Местная растительность</strong>
+                  </p>
                   <p class="gallery__author">Автор фото: Сергей</p>
                 </div>
-                <svg class="gallery__icon-like" aria-role="none" width="23" height="21" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
-                <p class="gallery__likes-count">143</p>
+                <div class="gallery__wrapper">
+                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21" fill="none">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="gallery__likes-count">143</p>
+                </div>
               </figcaption>
             </figure>
           </li>
@@ -107,13 +115,17 @@
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
-                  <p class="gallery__title">Дорога на север</p>
+                  <p class="gallery__title">
+                    <strong>Дорога на север</strong>
+                  </p>
                   <p class="gallery__author">Автор фото: Петр</p>
                 </div>
-                <svg class="gallery__icon-like" aria-role="none" width="23" height="21" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
-                <p class="gallery__likes-count">96</p>
+                <div class="gallery__wrapper">
+                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21" fill="none">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="gallery__likes-count">96</p>
+                </div>
               </figcaption>
             </figure>
           </li>
@@ -124,13 +136,17 @@
               </a>
               <figcaption class="gallery__caption">
                 <div class="gallery__container">
-                  <p class="gallery__title">Мост дьявола</p>
+                  <p class="gallery__title">
+                    <strong>Мост дьявола</strong>
+                  </p>
                   <p class="gallery__author">Автор фото: Антон</p>
                 </div>
-                <svg class="gallery__icon-like" aria-role="none" width="23" height="21" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
-                <p class="gallery__likes-count">254</p>
+                <div class="gallery__wrapper">
+                  <svg class="gallery__icon-like" aria-hidden="true" width="23" height="21" fill="none">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="gallery__likes-count">254</p>
+                </div>
               </figcaption>
             </figure>
           </li>
@@ -140,31 +156,31 @@
       <section class="video">
         <header class="video__header header">
           <h2 class="visually-hidden">Видеопрезентация</h2>
-          <p class="header__intro">Все еще сомневаетесь?</p>
+          <p class="header__intro header__intro--video">Все еще сомневаетесь?</p>
           <p class="header__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной
             раз!</p>
         </header>
         <div class="video__wrapper">
-          <a class="video__link" href="#">
-            <video class="video__player"
-              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-              poster="img/mobile/video-mobile.jpg" width="320" height="201" alt="Видео о Седоне">
-          </a>
-          <div class="video__controls">
-            <div class="video__timeline">
-              <div class="video__timeline-bar"></div>
-              <button class="video__timeline-marker" type="button"><span class="visually-hidden">Текущее время
-                  просмотра</span></button>
+          <video class="video__player" aria-label="Видео о Седоне"
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            poster="img/mobile/video-mobile.jpg" width="320" height="201">
+          </video>
+          <div class="video__controls controls">
+            <div class="controls__time-panel">
+              <div class="controls__time-slider"></div>
+              <button class="controls__slider-control" type="button">
+                <span class="visually-hidden">Выбрать время просмотра</span>
+              </button>
             </div>
-            <div class="video__buttons">
-              <button class="video__button restart-button" type="button">
+            <div class="controls__buttons">
+              <button class="controls__button controls__restart" type="button">
                 <span class="visually-hidden">Начать заново</span>
               </button>
-              <button class="video__button subtitles-toggle" type="button">
+              <button class="controls__button controls__subtitles" type="button">
                 <span class="visually-hidden">Включить субтитры</span>
               </button>
-              <button class="video__button fullscreen-button" type="button">
+              <button class="controls__button controls__fullscreen" type="button">
                 <span class="visually-hidden">Открыть во весь экран</span>
               </button>
             </div>
@@ -217,7 +233,7 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
