@@ -1,6 +1,8 @@
 .button {
   @include font-size(21px, 26px);
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
   color: $white;
   background-color: $basic-color;
   cursor: pointer;

@@ -43,3 +43,25 @@
     padding: 20px;
   }
 }
+
+.page__modal-container {
+  display: none;
+}
+
+.page__modal-container--open {
+  @include size(100%, 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1;
+}
+
+.page__modal {
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
+}
