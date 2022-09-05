@@ -34,14 +34,6 @@
 
 .page__main {
   flex-grow: 1;
-
-  &--blank {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $dark-grey;
-    padding: 20px;
-  }
 }
 
 .page__modal-container {

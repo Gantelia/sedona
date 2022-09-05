@@ -17,9 +17,9 @@
     <header class="page__header page-header">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/desktop/logotype-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/tablet/logotype-tablet.svg">
-          <img class="page-header__logo-image" src="img/mobile/logotype-mobile.svg" width="102" height="84"
+          <source media="(min-width: 1200px)" srcset="img/desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" width="102" height="84"
             alt="Логотип «Седона»">
         </picture>
       </a>
@@ -52,8 +52,17 @@
       </nav>
     </header>
 
-    <main class="page__main page-main page__main--blank">
-      <h1>Остальные страницы сайта...</h1>
+    <main class="page__main page-main">
+      <header class="page-main__header header">
+        <div class="header__banner header__banner--inner">
+          <svg class="header__mask header__mask--top" aria-hidden="true" width="1200" height="57">
+            <use xlink:href="img/sprite.svg#mask"></use>
+          </svg>
+        </div>
+        <div class="header__wrapper header__wrapper--form">
+          <h1 class="header__title header__title--form">Остальные страницы сайта</h1>
+        </div>
+      </header>
     </main>
 
     <footer class="page-footer">
