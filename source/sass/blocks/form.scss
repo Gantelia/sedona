@@ -470,6 +470,11 @@
   background-color: $light-grey;
 }
 
+.form__input[type="radio"]:focus + .form__mark,
+.form__input[type="checkbox"]:focus + .form__mark {
+  outline: $black solid 1px;
+}
+
 .form__input[type="radio"]:active + .form__mark,
 .form__input[type="checkbox"]:active + .form__mark {
   background-color: $dark-grey;

@@ -101,6 +101,10 @@
   }
 }
 
+.controls__icon--subtitles {
+  left: -2px;
+}
+
 .controls__button:hover .controls__icon {
   fill: $text-color;
 
