@@ -1,55 +1,63 @@
-# Личный проект «Седона»
+# Верстка для сайта туристического города "Седона"
 
-- Студент: [Грива Елена](https://htmlacademy.ru/profile/id1941977).
-- Наставник: `Нет`.
+> Личный учебный проект по курсу "HTML и CSS. Адаптивная вёрстка и автоматизация" от HTML Academy
 
----
+## Описание
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+- Проект:
+  - имеет респонсивную верстку
+  - выполнен полностью самостоятельно на HTML5, SASS и JS
+  - собран с помощью Gulp
+  - проверен на соответствие техническому заданию и критериям академии
+  - сверстан по макету Figma
+  - имеет автоматизированную через Gulp оптимизацию графики
+  - проходит проверку по Pixel Perfect
 
-Полезный файл:
+## Скриншоты
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+### Главная страница - верхняя часть
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+<img src="./source/img/screenshots/main-top.jpg" alt="Главная страница - верх">
 
----
+### Главная страница - нижняя часть
 
-### Памятка
+<img src="./source/img/screenshots/main-bottom.jpg" alt="Главная страница - низ">
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### Галерея - верхняя часть
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+<img src="./source/img/screenshots/gallery-top.jpg" alt="Галерея - верх">
 
-#### 2. Создайте форк
+### Галерея - нижняя часть
 
-Откройте мастер-репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+<img src="./source/img/screenshots/gallery-bottom.jpg" alt="Галерея - низ">
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807979-e1129f00-a18f-11e9-90d7-b44d2ff2c003.jpg">
+### Отзыв - верхняя часть(мобильная версия)
 
-Получится вот так:
+<p align="center">
+  <img src="./source/img/screenshots/form-top.jpg" alt="Отзыв - верх">
+</p>
+### Отзыв - средняя часть(мобильная версия)
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807980-e1129f00-a18f-11e9-8137-45876f130340.jpg">
+<p align="center">
+  <img src="./source/img/screenshots/form-middle.jpg" alt="Отзыв - середина">
+</p>
+### Отзыв - нижняя часть(мобильная версия)
 
-#### 3. Клонируйте репозиторий на свой компьютер
+<p align="center">
+  <img src="./source/img/screenshots/form-bottom.jpg" alt="Отзыв - низ">
+</p>
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
+## Установка
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807982-e1129f00-a18f-11e9-98c4-0d3bf4b85cf1.jpg">
-
-Клонировать репозиторий можно так:
+Чтобы запустить проект локально, используйте npm (CLI Node.js):
 
 ```
-git clone SSH-адрес_вашего_форка
+$ npm install
+$ npm start
 ```
 
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+Для производственной сборки
 
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+```
+$ npm run build
+```
